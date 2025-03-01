@@ -253,6 +253,10 @@ https://sepolia.uniscan.xyz/address/0x00B036B58a818B1BC34d502D3fE730Db729e62AC#c
 
 https://unichain-sepolia.blockscout.com/address/0xc1e5df1c14e28cbe8443fb268d74d5e48a00cac0?tab=contract
 
+#### PoolManager.initialize() with Hook 
+
+https://sepolia.uniscan.xyz/tx/0x1946b71449f0ef36d956e6fc5c5a0d2af739fcf3607d40ddb844b2417583c52e
+
 #### Uniswap V4 Unichain Sepolia Deployments
 
 https://docs.uniswap.org/contracts/v4/deployments#unichain-sepolia-1301
