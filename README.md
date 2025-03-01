@@ -166,7 +166,13 @@ forge script script/00_Counter.s.sol:CounterScript \
 
 #### Verify Blockscout Contract Already Deployed
 
-Use the address from the latest run for CREATE2
+Use the `contractAddress` from CREATE2 from
+
+```
+broadcast/00_Counter.s.sol/1301/run-latest.json
+```
+
+then run
 
 ```shell
 forge verify-contract \
