@@ -135,7 +135,7 @@ Additional resources:
 [v4-by-example](https://v4-by-example.org)
 
 
-## Unichain Deploy and Verify 
+## Unichain Deploy and Verify Blockscout
 
 ### Token
 
@@ -190,21 +190,64 @@ src/Counter.sol:Counter \
 --verifier-url https://unichain-sepolia.blockscout.com/api/
 ```
 
+## Unichain Deploy and Verify Uniscan Etherscan
+
+### Token
+
+#### Deploy and Verify Uniscan
+```shell
+forge create \
+src/ElectronDevice1.sol:ElectronDevice1 \
+--private-key $devTestnetPrivateKey \
+--rpc-url https://sepolia.unichain.org  \
+--verify \
+--etherscan-api-key $uniscanApiKey \
+--broadcast 
+```
+
+#### Verify Uniscan Contract Already Deployed
+```shell
+forge verify-contract \
+--rpc-url https://sepolia.unichain.org \
+<contract_address> \
+src/ElectronDevice1.sol:ElectronDevice1 \
+--etherscan-api-key $uniscanApiKey 
+```
+
+### Hook
+
+#### Deploy and Verify Uniscan
+
+```shell
+forge script script/00_Counter.s.sol:CounterScript \
+--private-key $devTestnetPrivateKey \
+--rpc-url https://sepolia.unichain.org \
+--verify \
+--etherscan-api-key $uniscanApiKey \
+--broadcast 
+```
+
 ## Unichain Deployments 
 
 ### ElectronDevice1.sol
 
-https://unichain-sepolia.blockscout.com/address/0x7CD3D2360d0410654695e8c57F7Bf744EA13b14f?tab=contract
+https://sepolia.uniscan.xyz/address/0x7fea70871e575ce3069acce0d25725ec0840dd8e#code
+
+<!-- https://unichain-sepolia.blockscout.com/address/0x7CD3D2360d0410654695e8c57F7Bf744EA13b14f?tab=contract -->
 
 
 ### ElectronDevice2.sol
 
-https://unichain-sepolia.blockscout.com/address/0x3c2E6D8C3Fee9BEC55d72D60f1537Db6522D6D18?tab=contract
+https://sepolia.uniscan.xyz/address/0x9030e7aa523b19d6a9d2327d45d3a3287b3efae1#code
+
+<!-- https://unichain-sepolia.blockscout.com/address/0x3c2E6D8C3Fee9BEC55d72D60f1537Db6522D6D18?tab=contract -->
 
 
 #### PoolManager.sol (Uniswap V4)
 
-https://unichain-sepolia.blockscout.com/address/0x00B036B58a818B1BC34d502D3fE730Db729e62AC?tab=contract
+https://sepolia.uniscan.xyz/address/0x00B036B58a818B1BC34d502D3fE730Db729e62AC#code
+
+<!-- https://unichain-sepolia.blockscout.com/address/0x00B036B58a818B1BC34d502D3fE730Db729e62AC?tab=contract -->
 
 #### Counter.sol (Hook)
 
