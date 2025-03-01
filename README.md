@@ -127,3 +127,26 @@ Additional resources:
 
 [v4-by-example](https://v4-by-example.org)
 
+
+## Unichain Deploy and Verify 
+
+### Deploy and Verify Blockscout
+```shell
+forge create src/ElectronDevice1.sol:ElectronDevice1 \
+--private-key $devTestnetPrivateKey \
+--rpc-url https://sepolia.unichain.org \
+--verify \
+--verifier blockscout \
+--verifier-url https://unichain-sepolia.blockscout.com/api/ \
+--broadcast
+```
+
+### Verify Blockscout Contract Already Deployed
+```shell
+forge verify-contract \
+--rpc-url https://sepolia.unichain.org \
+<contract_address> \
+src/ElectronDevice1.sol:ElectronDevice1 \
+--verifier blockscout \
+--verifier-url https://unichain-sepolia.blockscout.com/api/
+```
