@@ -227,6 +227,24 @@ forge script script/00_Counter.s.sol:CounterScript \
 --broadcast 
 ```
 
+#### Verify Uniscan Contract Already Deployed
+
+Use the `contractAddress` from CREATE2 from
+
+```
+broadcast/00_Counter.s.sol/1301/run-latest.json
+```
+
+then run
+
+```shell
+forge verify-contract \
+--rpc-url https://sepolia.unichain.org \
+<contract_address> \
+src/Counter.sol:Counter \
+--etherscan-api-key $uniscanApiKey 
+```
+
 ## Unichain Deployments 
 
 ### Token ElectronDevice1.sol
