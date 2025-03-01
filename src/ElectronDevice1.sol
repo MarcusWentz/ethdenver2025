@@ -6,10 +6,10 @@ pragma solidity 0.8.26;
 // solmate/=lib/v4-core/lib/solmate/
 import { ERC20 } from "solmate/src/tokens/ERC20.sol";
 
-contract TestTokenContract is ERC20 {
+contract ElectronDevice1 is ERC20 {
 
-    constructor() ERC20("TestTokenContract", "TTC", 18){ //Name, symbol and decimal places.
-        _mint(msg.sender, 1000000000 ether); // Mint 1 billion tokens to the address that deployed this contract.
+    constructor() ERC20("ElectronDevice1", "CHARGE", 18){ //Name, symbol and decimal places.
+        _mint(msg.sender, 100 ether); // 100 ether = 100% charge.
     }
 
 }
