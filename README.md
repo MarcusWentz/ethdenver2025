@@ -160,7 +160,8 @@ src/ElectronDevice1.sol:ElectronDevice1 \
 ```shell
 forge script script/00_Counter.s.sol:CounterScript \
 --private-key $devTestnetPrivateKey \
---rpc-url https://sepolia.unichain.org 
+--rpc-url https://sepolia.unichain.org \
+--broadcast 
 ```
 
 #### Verify Blockscout Contract Already Deployed
