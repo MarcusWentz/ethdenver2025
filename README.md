@@ -1,5 +1,12 @@
 # v4-template
 
+## Overview
+
+Tails of electricity versus speculative tokens.
+
+
+<img width="919"  src="https://github.com/MarcusWentz/ethdenver2025/blob/main/meme_vs_electricity.png">
+
 ## Source 
 
 https://github.com/uniswapfoundation/v4-template
