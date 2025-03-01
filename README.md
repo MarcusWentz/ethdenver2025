@@ -150,3 +150,9 @@ src/ElectronDevice1.sol:ElectronDevice1 \
 --verifier blockscout \
 --verifier-url https://unichain-sepolia.blockscout.com/api/
 ```
+
+## Deployments 
+
+### Unichain Token
+
+https://unichain-sepolia.blockscout.com/address/0x7CD3D2360d0410654695e8c57F7Bf744EA13b14f?tab=contract
