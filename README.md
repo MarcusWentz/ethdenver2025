@@ -130,7 +130,9 @@ Additional resources:
 
 ## Unichain Deploy and Verify 
 
-### Deploy and Verify Blockscout
+### Token
+
+#### Deploy and Verify Blockscout
 ```shell
 forge create src/ElectronDevice1.sol:ElectronDevice1 \
 --private-key $devTestnetPrivateKey \
@@ -141,7 +143,7 @@ forge create src/ElectronDevice1.sol:ElectronDevice1 \
 --broadcast
 ```
 
-### Verify Blockscout Contract Already Deployed
+#### Verify Blockscout Contract Already Deployed
 ```shell
 forge verify-contract \
 --rpc-url https://sepolia.unichain.org \
@@ -161,3 +163,12 @@ https://unichain-sepolia.blockscout.com/address/0x7CD3D2360d0410654695e8c57F7Bf7
 ### ElectronDevice2.sol
 
 https://unichain-sepolia.blockscout.com/address/0x3c2E6D8C3Fee9BEC55d72D60f1537Db6522D6D18?tab=contract
+
+
+#### PoolManager.sol (Uniswap V4)
+
+https://unichain-sepolia.blockscout.com/address/0x00B036B58a818B1BC34d502D3fE730Db729e62AC?tab=contract
+
+#### Uniswap V4 Unichain Sepolia Deployments
+
+https://docs.uniswap.org/contracts/v4/deployments#unichain-sepolia-1301
