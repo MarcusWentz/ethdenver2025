@@ -165,6 +165,9 @@ forge script script/00_Counter.s.sol:CounterScript \
 ```
 
 #### Verify Blockscout Contract Already Deployed
+
+Use the address from the latest run for CREATE2
+
 ```shell
 forge verify-contract \
 --rpc-url https://sepolia.unichain.org \
@@ -189,6 +192,10 @@ https://unichain-sepolia.blockscout.com/address/0x3c2E6D8C3Fee9BEC55d72D60f1537D
 #### PoolManager.sol (Uniswap V4)
 
 https://unichain-sepolia.blockscout.com/address/0x00B036B58a818B1BC34d502D3fE730Db729e62AC?tab=contract
+
+#### Counter.sol (Hook)
+
+https://unichain-sepolia.blockscout.com/address/0xc1e5df1c14e28cbe8443fb268d74d5e48a00cac0?tab=contract
 
 #### Uniswap V4 Unichain Sepolia Deployments
 
