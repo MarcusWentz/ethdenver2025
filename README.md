@@ -153,6 +153,26 @@ src/ElectronDevice1.sol:ElectronDevice1 \
 --verifier-url https://unichain-sepolia.blockscout.com/api/
 ```
 
+### Hook
+
+#### Deploy and Verify Blockscout
+
+```shell
+forge script script/00_Counter.s.sol:CounterScript \
+--private-key $devTestnetPrivateKey \
+--rpc-url https://sepolia.unichain.org 
+```
+
+#### Verify Blockscout Contract Already Deployed
+```shell
+forge verify-contract \
+--rpc-url https://sepolia.unichain.org \
+<contract_address> \
+src/Counter.sol:Counter \
+--verifier blockscout \
+--verifier-url https://unichain-sepolia.blockscout.com/api/
+```
+
 ## Unichain Deployments 
 
 ### ElectronDevice1.sol
