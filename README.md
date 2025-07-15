@@ -164,10 +164,21 @@ src/ElectronDevice1.sol:ElectronDevice1 \
 
 #### Deploy and Verify Blockscout
 
+##### Unichain Sepolia
+
 ```shell
 forge script script/00_Counter.s.sol:CounterScript \
 --private-key $devTestnetPrivateKey \
 --rpc-url https://sepolia.unichain.org \
+--broadcast 
+```
+
+##### Fluent DevNet
+
+```shell
+forge script script/00_Counter.s.sol:CounterScript \
+--private-key $devTestnetPrivateKey \
+--rpc-url https://rpc.dev.gblend.xyz \
 --broadcast 
 ```
 
