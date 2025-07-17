@@ -184,13 +184,15 @@ forge script script/00_Counter.s.sol:CounterScript \
 
 #### Verify Blockscout Contract Already Deployed
 
+##### Unichain Sepolia
+
 Use the `contractAddress` from CREATE2 from
 
 ```
 broadcast/00_Counter.s.sol/1301/run-latest.json
 ```
 
-then run
+then run a script with that address
 
 ```shell
 forge verify-contract \
@@ -199,6 +201,25 @@ forge verify-contract \
 src/Counter.sol:Counter \
 --verifier blockscout \
 --verifier-url https://unichain-sepolia.blockscout.com/api/
+```
+
+##### Fluent DevNet
+
+Use the `contractAddress` from CREATE2 from
+
+```
+broadcast/00_Counter.s.sol/20993/run-latest.json
+```
+
+then run a script with that address
+
+```shell
+forge verify-contract \
+--rpc-url https://rpc.dev.gblend.xyz \
+<contract_address> \
+src/Counter.sol:Counter \
+--verifier blockscout \
+--verifier-url https://blockscout.dev.gblend.xyz/api/
 ```
 
 ## Unichain Deploy and Verify Uniscan Etherscan
